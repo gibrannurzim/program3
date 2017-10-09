@@ -1,0 +1,30 @@
+Program Kalkulator;
+
+uses crt;
+var
+bil1,bil2 : integer;
+operasi : char;
+hasil : real;
+begin
+write('bilangan 1 = ');readln(bil1);
+write('bilangan 2 = ');readln(bil2);
+write('operasi=1(+)2(-)3(/)4(*)');readln(operasi);
+if (operasi='+')then
+begin
+hasil:=bil1+bil2
+end;
+if (operasi='-')then
+begin
+hasil:= bil1-bil2
+end;
+if (operasi='*')then
+begin
+hasil:=bil1*bil2
+end;
+if (operasi='/')then
+begin
+hasil:=bil1/bil2
+end;
+writeln('hasil = ',(hasil):5:2);
+readkey;
+end.
